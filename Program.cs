@@ -18,4 +18,9 @@ string text = "Широка страна моя родная, "
 Console.WriteLine("Начальная строка:");
 Console.WriteLine(text);
 Console.WriteLine();
-
+text = text.Replace(",", String.Empty);
+text = text.Replace("!", String.Empty);
+text = text.Replace(".", String.Empty);
+Console.WriteLine("Строка без знаков препинания:");
+Console.WriteLine(text);
+Console.WriteLine();

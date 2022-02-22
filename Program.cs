@@ -24,3 +24,4 @@ text = text.Replace(".", String.Empty);
 Console.WriteLine("Строка без знаков препинания:");
 Console.WriteLine(text);
 Console.WriteLine();
+string[] words = text.Split(" ");

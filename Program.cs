@@ -39,3 +39,15 @@ void FillArray(string[] strArray, string[] strArray2)
         }  
     }
 }
+
+void PrintArray(string[] strArray2 )
+{
+    for (int j = 0; j < strArray2.Length; j++)
+    {
+        Console.Write($"{strArray2[j]}"+' ');
+    }
+}
+
+FillArray(words, words3);
+Console.WriteLine("Окончательный вывод согласно условию задачи:");
+PrintArray(words3);

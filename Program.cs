@@ -25,3 +25,17 @@ Console.WriteLine("Строка без знаков препинания:");
 Console.WriteLine(text);
 Console.WriteLine();
 string[] words = text.Split(" ");
+string[] words3 = new string[words.Length];
+
+void FillArray(string[] strArray, string[] strArray2) 
+{
+    int k = 0; //счетчик слов нужной длины
+    for (int i = 0; i < strArray.Length; i++)
+    {
+        if (strArray[i].Length<4)
+        {
+            strArray2[k] = strArray[i];
+            k++;  
+        }  
+    }
+}
